@@ -19,6 +19,12 @@ https://github.com/alex8088/electron-vite-boilerplate
 5. package.json > script 에 명령줄 추가
 - "deploy:win": "npm run build && electron-builder --win --publish always"
 
-6. 업데이트
+6. 빌드
+- npm run deploy:win
+- 환경변수가 인식하지 않을 경우
+$env:GH_TOKEN = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+npm run deploy:win
+
+7. 업데이트
 - 최신 Releases 를 체크하므로 draft 항목을 Publish releases 해야 함
 - 현재는 public 으로 릴리즈 한다. 배포가지 가능하지만 업데이트시 token 정보가 어디에 위치하여야 하는지 파악해야 함.
