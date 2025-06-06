@@ -80,6 +80,14 @@ code {
   font-weight: 700;
 }
 
+.ace {
+  background: -webkit-linear-gradient(315deg, #647eff 25%, #d35342);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
 .actions {
   display: flex;
   padding-top: 32px;

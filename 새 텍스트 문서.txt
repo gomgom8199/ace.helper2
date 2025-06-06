@@ -8,7 +8,7 @@ https://github.com/alex8088/electron-vite-boilerplate
 - git add *
 - git commit -m "init"
 - git branch -M main
-- git remote add origin https://github.com/sh415/ace.helper2.git
+- git remote add origin https://github.com/gomgom8199/ace.helper2.git
 - git push -u origin main
 
 3. git 토큰 생성

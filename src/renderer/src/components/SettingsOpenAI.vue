@@ -1,13 +1,17 @@
 <template>
   <div>
-    <div class="flex pb-2">
+    <span class="vue text-xs">ChatGPT 설정</span>
+
+    <div class="py-2"></div>
+
+    <div class="flex py-2">
       <FloatLabel>
         <InputText class="w-96" id="openai_key" size="small" v-model="openaiKey" @blur="handleBlur" />
         <label class="text-xs" for="openai_key">OpenAI_API_KEY</label>
       </FloatLabel>
     </div>
 
-    <div class="flex px-2 pb-4">
+    <div class="flex px-2 pb-2">
       <div v-if="openaiChecking">
         <ProgressSpinner 
           style="width: 20px; 
@@ -41,12 +45,10 @@
 
     <div clas="flex py-4">
       <FloatLabel>
-        <Textarea class="w-96" id="openai_question1_plus" v-model="openaiQuestion1Plus" rows="3" cols="30" style="resize: none" @blur="handleBlur" />
+        <Textarea class="w-96" id="openai_question1_plus" v-model="openaiQuestion1Plus" rows="2" cols="30" style="resize: none" @blur="handleBlur" />
         <label class="text-xs" for="openai_question1_plus">AI 포스팅1 에 사용할 질문을 적어보세요.</label>
       </FloatLabel>
     </div>
-
-    <div class="py-2"></div>
 
     <div class="flex py-4">
       <div class="text-xs font-semibold text-slate-800 px-2">AI 포스팅2 사용</div>
@@ -57,7 +59,7 @@
 
     <div clas="flex py-4">
       <FloatLabel>
-        <Textarea class="w-96" id="openai_question2" v-model="openaiQuestion2" rows="4" cols="30" style="resize: none" @blur="handleBlur" />
+        <Textarea class="w-96" id="openai_question2" v-model="openaiQuestion2" rows="2" cols="30" style="resize: none" @blur="handleBlur" />
         <label class="text-xs" for="openai_question2">AI 포스팅2 에 사용할 질문을 적어보세요.</label>
       </FloatLabel>
     </div>
@@ -126,7 +128,7 @@
     if (key === 'openai_key') {
       const settings = {
         key: key,
-        value: openaiKey.value.trim(),
+        value: openaiKey.value.trim() || null,
       }
       window.electron.ipcRenderer.send('updateSettings', settings);
 
@@ -135,14 +137,14 @@
     } else if (key=== 'openai_question1_plus') {
       const settings = {
         key: key,
-        value: openaiQuestion1Plus.value.trim(),
+        value: openaiQuestion1Plus.value.trim() || null,
       }
       window.electron.ipcRenderer.send('updateSettings', settings);
 
     } else if (key === 'openai_question2') {
       const settings = {
         key: key,
-        value: openaiQuestion2.value.trim(),
+        value: openaiQuestion2.value.trim() || null,
       }
       window.electron.ipcRenderer.send('updateSettings', settings);
     }

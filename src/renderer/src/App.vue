@@ -2,8 +2,8 @@
   <img alt="logo" class="logo" src="./assets/electron.svg" />
   <div class="creator">Powered by electron-vite</div>
   <div class="text">
-    Build an Electron app with
-    <span class="vue">Vue</span>
+    Ace Auction
+    <span class="vue">Helper</span>
   </div>
   <p class="tip">Please try pressing <code>F12</code> to open the devTool</p>
   <div class="actions">
@@ -14,12 +14,12 @@
       <a target="_blank" rel="noreferrer" @click="ipcHandle">Send IPC</a>
     </div> -->
 
-    <!-- 1. 빌드 환경 -->
-    <Button v-if="enableAuction" icon="pi pi-cloud-upload" label="자동 경매올리고 포스팅" size="small" @click="overlayAuction" />
-    <Button v-else icon="pi pi-spin pi-spinner" label="자동 경매올리고 포스팅" size="small" @click="" disabled />
+    <!-- ✅ 빌드 환경 -->
+    <!-- <Button v-if="enableAuction" icon="pi pi-bolt" severity="info" label="프로그램 시작" size="small" @click="overlayAuction" />
+    <Button v-else icon="pi pi-spin pi-spinner" severity="info" label="프로그램 시작" size="small" @click="" disabled /> -->
 
-    <!-- 2. 개발 환경 -->
-    <!-- <Button icon="pi pi-cloud-upload" label="자동 경매올리고 포스팅" size="small" @click="overlayAuction" /> -->
+    <!-- ✅ 개발 환경 -->
+    <Button icon="pi pi-bolt" severity="info" label="프로그램 시작" size="small" @click="overlayAuction" />
   </div>
 
   <div class="pt-4 text-xs">{{ updateProgress }}</div>
@@ -88,8 +88,8 @@
     left: 0;
     width: 80%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.87);
-    z-index: 1000;
+    background-color: rgba(255, 255, 255, 1.0);
+    z-index: 1;
     display: flex;
     /* justify-content: center;
     align-items: center; */

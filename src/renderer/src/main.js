@@ -1,6 +1,7 @@
 import './assets/main.css'
 import './assets/tailwind.css'
 import 'primeicons/primeicons.css';
+import 'vue-color/style.css';
 
 import { createApp } from 'vue'
 import App from './App.vue'

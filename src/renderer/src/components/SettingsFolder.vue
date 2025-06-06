@@ -1,5 +1,8 @@
 <template>
   <div>
+
+    <span class="vue text-xs">블로그 시작 및 마무리 폴더 설정</span>
+
     <div class="flex items-center py-4">
       <div class="pr-1">
         <Button icon="pi pi-folder" id="folder_start" size="small" severity="contrast" aria-label="Star" @click="folderDialog" />
