@@ -15,11 +15,11 @@
     </div> -->
 
     <!-- ✅ 빌드 환경 -->
-    <!-- <Button v-if="enableAuction" icon="pi pi-bolt" severity="info" label="프로그램 시작" size="small" @click="overlayAuction" />
-    <Button v-else icon="pi pi-spin pi-spinner" severity="info" label="프로그램 시작" size="small" @click="" disabled /> -->
+    <Button v-if="enableAuction" icon="pi pi-bolt" severity="info" label="프로그램 시작" size="small" @click="overlayAuction" />
+    <Button v-else icon="pi pi-spin pi-spinner" severity="info" label="프로그램 시작" size="small" @click="" disabled />
 
     <!-- ✅ 개발 환경 -->
-    <Button icon="pi pi-bolt" severity="info" label="프로그램 시작" size="small" @click="overlayAuction" />
+    <!-- <Button icon="pi pi-bolt" severity="info" label="프로그램 시작" size="small" @click="overlayAuction" /> -->
   </div>
 
   <div class="pt-4 text-xs">{{ updateProgress }}</div>

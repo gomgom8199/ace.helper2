@@ -1,9 +1,6 @@
 <template>
   <ul class="versions">
-    <li class="build">Build v{{ appVersion }}</li>
-    <li class="electron-version">Electron v{{ versions.electron }}</li>
-    <li class="chrome-version">Chrom v{{ versions.chrome }}</li>
-    <li class="node-version">Node v{{ versions.node }}</li>
+    <li class="vue">Build v{{ appVersion }}</li>
   </ul>
 </template>
 
