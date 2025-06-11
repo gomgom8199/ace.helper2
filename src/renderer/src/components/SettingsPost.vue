@@ -86,7 +86,7 @@
     { name: '나눔손글씨 펜', val: 'NanumPen' },
     { name: '나눔손글씨 붓', val: 'NanumBrush' },
   ])
-  const colorHEX = ref('#0693e3');
+  const colorHEX = ref('#8ed1fc');
   const waterText = ref();
 
   onMounted (async () => {
