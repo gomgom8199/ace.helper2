@@ -3,6 +3,7 @@ import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon2.png?asset'
 
+
 const { autoUpdater } = require("electron-updater");
 const { execFile } = require("child_process");
 const fs = require('fs');
