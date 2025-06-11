@@ -1,0 +1,19 @@
+{
+  "naver_id": null,
+  "naver_pw": null,
+  "auction_id": null,
+  "auction_pw": null,
+  "folder_start": null,
+  "folder_end": null,
+  "openai_key": null,
+  "openai_use_question1": false,
+  "openai_question1": 0,
+  "openai_question1_plus": null,
+  "openai_use_question2": false,
+  "openai_question2": null,
+  "is_publish": true,
+  "quote": 0,
+  "font": "NanumPen",
+  "font_color": "#0693e3",
+  "water_text": null
+}

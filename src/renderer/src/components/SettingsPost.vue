@@ -82,7 +82,7 @@
     { name: '나눔스퀘어 (Extra Bold)', val: 'NanumSquareEB' },
     { name: '나눔스퀘어 (Bold)', val: 'NanumSquareB' },
     { name: '나눔스퀘어 (Regular)', val: 'NanumSquareR' },
-    { name: '나눔스퀘어 (Light)', val: 'NanumSquareR' },
+    { name: '나눔스퀘어 (Light)', val: 'NanumSquareL' },
     { name: '나눔손글씨 펜', val: 'NanumPen' },
     { name: '나눔손글씨 붓', val: 'NanumBrush' },
   ])
