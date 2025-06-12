@@ -7,12 +7,6 @@
   </div>
   <p class="tip">Please try pressing <code>F12</code> to open the devTool</p>
   <div class="actions">
-    <!-- <div class="action">
-      <a href="https://electron-vite.org/" target="_blank" rel="noreferrer">Documentation</a>
-    </div>
-    <div class="action">
-      <a target="_blank" rel="noreferrer" @click="ipcHandle">Send IPC</a>
-    </div> -->
 
     <!-- ✅ 빌드 환경 -->
     <Button v-if="enableAuction" icon="pi pi-bolt" severity="info" label="프로그램 시작" size="small" @click="overlayAuction" />
